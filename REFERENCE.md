@@ -674,6 +674,20 @@ Default value: `[3300, 6789]`
 
 manage out chrony
 
+#### Parameters
+
+The following parameters are available in the `nftables::rules::out::chrony` class:
+
+* [`servers`](#servers)
+
+##### <a name="servers"></a>`servers`
+
+Data type: `Array[Stdlib::IP::Address]`
+
+single IP-Address or array of IP-addresses from NTP servers
+
+Default value: `[]`
+
 ### <a name="nftablesrulesoutdhcp"></a>`nftables::rules::out::dhcp`
 
 manage out dhcp
@@ -927,7 +941,7 @@ The following parameters are available in the `nftables::rules::pxp_agent` class
 
 ##### <a name="ports"></a>`ports`
 
-Data type: `Array[Stdlib::Port]`
+Data type: `Array[Stdlib::Port,1]`
 
 pxp server ports
 
