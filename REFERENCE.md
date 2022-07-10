@@ -59,6 +59,7 @@ and Manager Daemons (MGR).
 * [`nftables::rules::out::ssh`](#nftablesrulesoutssh): manage out ssh
 * [`nftables::rules::out::ssh::remove`](#nftablesrulesoutsshremove): disable outgoing ssh
 * [`nftables::rules::out::tor`](#nftablesrulesouttor): manage out tor
+* [`nftables::rules::out::whois`](#nftablesrulesoutwhois): allow clients to query remote whois server
 * [`nftables::rules::out::wireguard`](#nftablesrulesoutwireguard): manage out wireguard
 * [`nftables::rules::puppet`](#nftablesrulespuppet): manage in puppet
 * [`nftables::rules::pxp_agent`](#nftablesrulespxp_agent): manage in pxp-agent
@@ -892,6 +893,10 @@ disable outgoing ssh
 ### <a name="nftablesrulesouttor"></a>`nftables::rules::out::tor`
 
 manage out tor
+
+### <a name="nftablesrulesoutwhois"></a>`nftables::rules::out::whois`
+
+allow clients to query remote whois server
 
 ### <a name="nftablesrulesoutwireguard"></a>`nftables::rules::out::wireguard`
 
